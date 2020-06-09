@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.hp.sjdf.AllUser">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/fragment_background"
+        tools:context="com.example.anuragtiwari.recyclerdemo.MainActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Other Tagged Users"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:id="@+id/otusers"
+            android:textColor="@color/colorPrimary" />
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvseeusers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/otusers"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+</FrameLayout>

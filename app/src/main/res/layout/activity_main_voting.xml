@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.hp.sjdf.ShowEvent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:background="@drawable/fragment_background">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Voting Page"
+           android:layout_gravity="center"
+           android:textSize="40dp"
+           android:textColor="@color/colorPrimary"
+           android:textStyle="bold"
+           android:layout_marginTop="20dp"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/votingtitle"
+           android:layout_marginTop="50dp"
+           android:textSize="25dp"
+           android:textColor="@color/colorPrimary"/>
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/radio"
+           android:layout_marginTop="20dp">
+
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/yesvote"
+               android:text="Yes"
+               android:layout_marginTop="10dp"
+               android:textSize="25dp"
+               android:textColor="@color/colorPrimary"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/novote"
+               android:text="No"
+               android:layout_marginTop="10dp"
+               android:textSize="25dp"
+               android:textColor="@color/colorPrimary"/>
+
+
+       </RadioGroup>
+
+       <Button
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:id="@+id/votebutton"
+           android:layout_marginTop="20dp"
+           android:text="Submit Your Vote"
+           android:background="@drawable/button_background"/>
+
+       <TextView
+           android:id="@+id/textView15"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="TextView"
+           android:layout_marginTop="20dp"
+           android:visibility="invisible"/>
+       <TextView
+           android:id="@+id/textView161"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="TextView"
+           android:layout_marginTop="20dp"
+           android:visibility="invisible"/>
+
+
+   </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.sjdf">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/df"
+        android:label="DigitalFirm"
+        android:roundIcon="@mipmap/df"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AddUserActivity" />
+        <activity android:name=".AllUser" />
+        <activity android:name=".Contact_list_Activity" />
+        <activity android:name=".CreateEvent" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Notification" />
+        <activity android:name=".ResultGeneration" />
+        <activity android:name=".Setusername" />
+        <activity android:name=".ShowEvent" />
+        <activity android:name=".UploadActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".SeeTagUsers" />
+        <activity android:name=".NotifyChatActivity" />
+        <activity android:name=".NotifySeeTagUsers" />
+        <activity android:name=".FileUpload" />
+        <activity android:name=".NotifyFileUpload" />
+        <activity android:name=".ShowVote" />
+        <activity android:name=".CreateVote" />
+        <activity android:name=".MainVoting" />
+        <activity android:name=".MainNotification" />
+        <activity android:name=".VoteNotification" />
+        <activity android:name=".SeeVotes" />
+        <activity android:name=".Intro"></activity>
+        <activity android:name=".GraphActivity"></activity>
+    </application>
+
+</manifest>

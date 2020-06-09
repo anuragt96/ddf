@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.hp.sjdf.CreateEvent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/fragment_background"
+        tools:context="com.example.anuragtiwari.recyclerdemo.MainActivity">
+
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/search_layout"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="Enter Voting Title" />
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:text="Create Poll"
+            android:textColor="#fff"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvEventList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="19dp"
+            android:layout_alignParentBottom="true" />
+
+    </LinearLayout>
+
+</FrameLayout>
